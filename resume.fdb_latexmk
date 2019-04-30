@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1556616216 "/Users/ince/Jasarin-V.github.io/resume/jasarin_resume.tex" "/Users/ince/Jasarin-V.github.io/resume/jasarin_resume.pdf" "jasarin_resume" 1556616218
-  "/Users/ince/Jasarin-V.github.io/resume/jasarin_resume.aux" 1556616217 1091 016b8102320fdaef9a2fbf464bc25bbc ""
-  "/Users/ince/Jasarin-V.github.io/resume/jasarin_resume.tex" 1556616215 9065 c48df8cafa1447821a67204f065b8bc0 ""
+["pdflatex"] 1556618325 "/Users/ince/Jasarin-V.github.io/resume.tex" "/Users/ince/Jasarin-V.github.io/resume.pdf" "resume" 1556618326
+  "/Users/ince/Jasarin-V.github.io/resume.aux" 1556618326 1091 016b8102320fdaef9a2fbf464bc25bbc ""
+  "/Users/ince/Jasarin-V.github.io/resume.tex" 1556618323 9065 c48df8cafa1447821a67204f065b8bc0 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc" 1480098667 2679 32dd8ae231bf4a0752b98f62dc097183 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1480098668 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
@@ -196,13 +196,13 @@
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495593472 2350277 a699055bee05bf8a40b0504752487295 ""
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1495593487 4129592 0e6cfee100d68e6d96b92c0258f2ff73 ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
-  "jasarin_resume.aux" 1556616217 1091 016b8102320fdaef9a2fbf464bc25bbc ""
-  "jasarin_resume.out" 1556616217 629 092bab78117c239247913d62c1b45e15 ""
-  "jasarin_resume.tex" 1556616215 9065 c48df8cafa1447821a67204f065b8bc0 ""
+  "resume.aux" 1556618326 1091 016b8102320fdaef9a2fbf464bc25bbc ""
+  "resume.out" 1556618326 629 092bab78117c239247913d62c1b45e15 ""
+  "resume.tex" 1556618323 9065 c48df8cafa1447821a67204f065b8bc0 ""
   (generated)
-  "jasarin_resume.pdf"
-  "jasarin_resume.aux"
-  "jasarin_resume.log"
-  "jasarin_resume.out"
-  "/Users/ince/Jasarin-V.github.io/resume/jasarin_resume.log"
-  "/Users/ince/Jasarin-V.github.io/resume/jasarin_resume.pdf"
+  "resume.log"
+  "resume.pdf"
+  "/Users/ince/Jasarin-V.github.io/resume.pdf"
+  "resume.aux"
+  "/Users/ince/Jasarin-V.github.io/resume.log"
+  "resume.out"
