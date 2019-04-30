@@ -1,0 +1,220 @@
+
+% 
+
+
+
+
+\documentclass[10pt,a4paper,roman]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+% \usepackage[10pt]{extsizes}
+% \usepackage{newtxtext,newtxmath}
+% \usepackage{times}
+
+
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\usepackage{setspace}
+
+\usepackage{geometry}
+\geometry{paperwidth=210 mm,paperheight=307mm}
+\geometry{ scale=0.9} % Reduce document margins
+\geometry{bottom=0mm, top = 10mm}
+
+
+
+\setlength{\hintscolumnwidth}{3.1cm} % Uncomment to change the width of the dates column
+% \setlength{\makecvtitlenamewidth}{15cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\usepackage{fontawesome}
+\usepackage{anyfontsize}
+
+\def\twodigits[#1]{\ifnum#1<10 0\the#1\else\ifnum#1>100 \twodigits[\numexpr#1-100]\relax\else\the#1\fi\fi}
+\usepackage[ddmmyy]{datetime}
+
+
+\renewcommand*{\mobilephonesymbol}{\large{\faMobilePhone}~}
+\renewcommand*{\emailsymbol}{\faEnvelope~}
+\renewcommand*{\cventry}[7][.25em]{%
+  \cvitem[#1]{#2}{%
+    {\bfseries#3}%
+    \ifthenelse{\equal{#4}{}}{}{, {\slshape#4}}%
+    \ifthenelse{\equal{#5}{}}{}{, #5}%
+    \ifthenelse{\equal{#6}{}}{}{, #6}%
+    .\strut%
+    \ifx&#7&%
+      \else{\newline{}\begin{minipage}[t]{\linewidth}#7\end{minipage}}\fi}}
+
+\makeatletter
+\RenewDocumentCommand{\section}{sm}{%
+  \par\addvspace{2ex}%
+  \phantomsection{}% reset the anchor for hyperrefs
+  \addcontentsline{toc}{section}{#2}%
+  \parbox[t]{\hintscolumnwidth}{\strut\raggedleft\raisebox{\baseletterheight}{\color{color1}\rule{\hintscolumnwidth}{0.95ex}}}%
+  \hspace{\separatorcolumnwidth}%
+  \parbox[t]{\maincolumnwidth}{\strut\sectionstyle{#2}}%
+  \par\nobreak\addvspace{1ex}\@afterheading}% to avoid a pagebreak after the heading
+\makeatother
+%\patchcmd{\section}{0.95ex}{0.5ex}{}{}
+
+
+%------
+%Header
+%------
+
+
+
+\firstname{Jasarin}
+\familyname{Vorawathanabuncha}
+\address{110 Sinthorn Village, Happyland}{Bangkapi, Bangkok 10240}
+\mobile{\small{(+66) 884988849}}
+\email{v.jasarin@gmail.com}
+
+\begin{document}
+
+\makecvtitle{} % Print the CV title
+\vspace*{-3.5em}
+
+%-------
+%Content
+%-------
+
+
+
+
+\section{Education}
+\cventry{Aug 2015--May 2019}{Chulalongkorn University}{}{Bangkok}{Thailand}{Bachelor of Business Administration (Banking and Finance), \textbf{3.98/4.00}, \textit{Rank: 1/118}} 
+
+\cventry{}{Relevant Courses: \normalfont{Macroeconomics}}{}{Corporate Finance, Derivatives, Fixed-Income, Investments, Inferential Statistics, Econometrics, Linear Algebra and Multivariable Calculus, Quantitative Analysis, Financial Modelling, Financial Engineering, (Graduate) Time-Series Econometrics
+\newline \textbf{Currently Enrolled:} Python Programming, Credit Modelling, Seminar in Corporate Finance, Game Theory, (Graduate) Micro-Econometrics
+\newline \textbf{Course Project:} Sensitivity Analysis and Intuitions on Wedding-Cake Structured Notes}{}{}
+
+
+% \cventry{May 2003-- Feb 2015\ }{Saint Dominic School}{}{Bangkok}{Thailand}{Mathematics--Science Programme, \textbf{3.82/4.00}}
+
+
+
+
+
+
+
+
+\section{Experience}
+
+\cventry{Aug 2018--Present\ }{WorldQuant Research}{Thailand}{Part-time Research Consultant}{}{
+\begin{itemize}
+\item[\faCaretRight] Find trading strategies (alphas) for US, EU, and Asian equities using WebSim platform.
+\end{itemize}}
+
+\cventry{May--Aug 2018\ }{WorldQuant Research}{Thailand}{Financial Data Scientist Intern \textit{(full-time offer received)}}{}{
+\begin{itemize}
+\item[\faCaretRight] Low- to mid-frequency US Equity market-neutral alpha research with an average \newline out-of-sample Sharpe/in-sample Sharpe of 1.48.
+\item[\faCaretRight] Wrote algorithms for Kalman Filter, Fast Fourier Transform, Principal Component Analysis, \\
+Logistics Regression, GARCH estimation and applied them to alphas in Python.
+\item[\faCaretRight] Developed Python-based Alphas' parameter optimizers with stats module and genetic algorithm.
+\end{itemize}}
+
+\cventry{Dec 2017--Feb 2018\ }{Chulalongkorn University}{}{Research Assistant}{}{\textit{In close collaboration with Dr. Peerapong Dhangwatnotai.}
+\begin{itemize}
+\item[\faCaretRight] Scraped and stored large intraday market data into a MySQL database using Python-based scripts.
+\item[\faCaretRight] Maintained Google Cloud instances to automate the data collecting process.
+\item[\faCaretRight] Analyzed the data for potential price-volume trading strategies.
+\end{itemize}}
+
+\cventry{Dec 2017--Jan 2018\ }{Mahidol University}{}{Research Assistant}{}{\textit{Under supervision of Dr. Kanix Bukkavesa.}
+\begin{itemize}
+\item[\faCaretRight] Researched and cleaned datasets from various publications and Bloomberg Terminal.
+\end{itemize}}
+
+\cventry{Aug--Dec 2017\ }{Chulalongkorn University}{Mathematical Techniques for Finance}{Teaching Assistant}{}{\textit{Second-year Undergraduate course on Linear Algebra, Multivariable Calculus, and Optimization}
+\begin{itemize}
+\item[\faCaretRight] Held office hours and helped guide students through the course material.
+\item[\faCaretRight] Worked closely with the lecturers to prepare weekly problem sets with detailed solutions.
+% \item[\faCaretRight] Prepared and provided detailed solutions to the problem sets.
+\end{itemize}}
+
+
+
+
+\section{Achievements}
+\cventry{\vspace{-0.4cm}\begin{spacing}{1}
+\scriptsize{2016 \\2017 \\2018}
+    \end{spacing}}{Academic Excellence Awards}{}{}{}{\textit{Awarded to students with the highest cumulative GPA of each major}}
+\vspace{-1em}
+\cventry{2017}{Crown Diamond in Economics Competition}{}{Silver Medalist}{}{\textit{Ranked 2nd among 224 teams for microeconomics analysis on Thailand's alcohol tax.}}
+\cventry{2016}{Thailand 6th Mozart International Piano Competition}{}{Finalist}{}{}
+
+
+
+% \vspace{5em}
+
+
+\section{Extra-curriculars}
+\cventry{Aug 2017--Present\ }{Finance Major Student Committee}{}{Member}{}{\textit{Elected by the senior committee to represent finance major students.}
+\begin{itemize}
+\item[\faCaretRight] Plan faculty activities and propose them to the department for approval
+\item[\faCaretRight] Head programmer of stock trading simulations on University's Open Days
+\end{itemize}}
+%\cventry{2015}{CU Chorus}{}{Pianist}{}{Provided accompaniment to the singers during practices and rehearsals.}
+\cventry{2015--2016}{CU Chorus}{}{Junior Pianist}{}{
+\begin{itemize}
+\item[\faCaretRight] Provided accompaniments to the choir during practices and rehearsals
+\item[\faCaretRight] Chosen by the conductor to play at the commencement ceremony
+\end{itemize}}
+% \cventry{2015--Present}{Faculty Basketball Team}{}{Member}{}{}
+% \cventry{2015--Present}{Faculty Running Team}{}{Member}{}{}
+
+
+
+
+
+
+
+\section{Skills and Interests}
+%\cvitem{\scriptsize{Programming}}{Octave, Python, Matplotlib, \LaTeX} \vspace{-0.5em}
+%\cvitem{ \scriptsize{Languages}}{}
+\cvitem{Software}{Bloomberg, Reuters Eikon, Stata, Excel} 
+\vspace{-0.25em}
+\cvitem{\scriptsize{Computer}}{ \textit{(Intermediate)} Python} \vspace{-0.5em}
+\cvitem{ \scriptsize{Languages}}{ \textit{(Beginner)} C++, MATLAB, VBA, \LaTeX }
+\cvitem{Languages}{English (IELTS: \textbf{8.0/9.0}), Thai (Native)}
+% \cvitem{Interests}{Alpha Research, Portfolio Optimization, Applied Microeconomics, \newline
+% Classical Piano Music, Contemporary Classical Music, Contemporary Art}
+% \vspace*{-0.35cm}
+
+\section{MOOCs}
+%\cvitem{}{Pricing Options with Mathematical Models, CaltechX}
+%\cvitem{}{Stochastic Processes: Data Analysis and Computer Simulation, KyotoUx}
+\cvitem{}{\begin{itemize}
+\item[\faCaretRight] Andrew Ng's Machine Learning, Coursera
+\item[\faCaretRight] Pricing Options with Mathematical Models, CaltechX
+\item[\faCaretRight] Stochastic Processes: Data Analysis and Computer Simulation, KyotoUx 
+\item[\faCaretRight] Linear Algebra, MIT OpenCourseWare
+\item[\faCaretRight] Differential Equations, MIT OpenCourseWare
+\end{itemize}}
+\vspace{-1.75em}
+%\section{Languages}
+%
+%\cvitemwithcomment{English}{Mothertongue}{}
+%\cvitemwithcomment{Spanish}{Intermediate}{Conversationally fluent}
+%\cvitemwithcomment{Dutch}{Basic}{Basic words and phrases only}
+
+% \section{Interests}
+% \renewcommand{\listitemsymbol}{\faCaretRight~} 
+
+% \cvitem{}{Quantitative Finance, Computational Finance, Algorithmic Trading, Econometrics, \newline Quantitative Risk Management, Microeconomics Theory, Options Theory.}
+%\cvitem{}{\begin{itemize}
+%	\item[\faCaretRight]Mathematical Models for Finance
+%	\item[\faCaretRight]Quantitative Finance, Computational Finance
+%	\item[\faCaretRight]Risk Management
+%	\item[\faCaretRight]Microeconomics
+%	\item[\faCaretRight]Options Theory
+%	\end{itemize}}
+
+
+
+\begin{tikzpicture}[remember picture,overlay]
+  % \node[anchor=south, yshift=0cm] at (current page.south) {\ttfamily{Last update: \twodigits[\month]/\twodigits[\year]}};
+  \node[anchor=south east, yshift=0.2cm, xshift = -0.2cm] at (current page.south east) {\ttfamily{\today}};
+\end{tikzpicture}
+
+\end{document}
